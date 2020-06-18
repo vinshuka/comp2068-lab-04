@@ -1,0 +1,23 @@
+<%- include ('../partials/header') %>
+
+<div class="container my-5">
+  <!-- Add in your own product display -->
+  <header>
+    <h1><%= product.name%></h1>
+  </header>
+  <hr>
+  <div class="description jumbotron pt-3" style="font-size: larger;">
+    <strong style="font-size: larger;">Description:</strong>
+    <br>
+    <br>
+    &emsp;<%- product.Description %>
+  </div>
+  <div style="text-align: right;">
+    <strong>Price: $<%- product.price %>&emsp;</strong>
+    <button class="btn btn-success btn-lg">Buy</button>
+    <!-- it just didn't look right with out a buy button -->
+  </div>
+  
+</div>
+
+<%- include ('../partials/footer') %>
